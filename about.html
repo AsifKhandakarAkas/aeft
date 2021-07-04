@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online fish store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="picture/0e52d4d1db5e40dcb58149608c1acf65.png" alt="logo" width="100px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li ><a href="product.html">Product</a></li>
+                        <li ><a href="login.html">Log In</a></li>
+                        <li class="active"><a href="about.html">About Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-shopping-cart" style="font-size:24px">Cart</i>
+                <i id="a" class="fa fa-bars" style="font-size: 24px; padding-left: 10px;" onclick="menutoggle()"></i>
+
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, eveniet nostrum laboriosam eligendi, animi aliquam est aperiam sunt minus autem repudiandae distinctio rem temporibus quas asperiores maxime perferendis dolores ea labore a? Laboriosam ipsa iste quis aspernatur nulla nihil commodi voluptatibus asperiores! Excepturi et, incidunt aperiam nostrum in temporibus culpa debitis deleniti soluta quibusdam. Quae!</p>
+
+
+
+
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="footcol3">
+                <img src="picture/0e52d4d1db5e40dcb58149608c1acf65.png" alt="logo" width="90px">
+                <p>We Value your trust.</p>
+            </div>
+            <div class="footcol3">
+                <h2>Contact</h2>
+                <p> <br>Mobile Number:01234567890 <br>Email:asifkhandakarakas@gmail.com </p>
+
+            </div>
+            <div class="footcol3">
+                <a href="">
+                    <h2>About Us</h2>
+                </a>
+                <h2>Follow us on social media &#8595;</h2><a
+                    href="https://www.facebook.com/profile.php?id=100054366019333"><i class="fa fa-facebook-official"
+                        style="font-size:48px;color:rgb(18, 132, 224)"></i></a>
+            </div>
+
+        </div>
+        <hr>
+
+
+
+    </div>
+
+    <!-- js for toggle the menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") { MenuItems.style.maxHeight = "200px"; }
+            else { MenuItems.style.maxHeight = "0px"; }
+        }
+
+    </script>
+
+</body>
+
+</html>
